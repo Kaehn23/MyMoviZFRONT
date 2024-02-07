@@ -13,7 +13,7 @@ function Home() {
 
   // Fetch "/movies" with useEffect
   useEffect(() => {
-    fetch("my-moviz-back-cp2n.vercel.app/movies")
+    fetch("https://my-moviz-back-cp2n.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         const formatedData = data.movies.map((movie) => {
